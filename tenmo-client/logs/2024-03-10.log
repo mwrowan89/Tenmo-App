@@ -1,0 +1,8 @@
+2024-03-10T08:31:22.4556846 401 : [no body]
+2024-03-10T08:31:34.3488374 401 : [no body]
+2024-03-10T08:31:40.7476213 401 : [no body]
+2024-03-10T08:48:39.5330848 401 : [no body]
+2024-03-10T08:48:48.1306928 400 : [{"timestamp":"2024-03-10T14:48:48.127+00:00","status":400,"error":"Bad Request","message":"User already exists.","path":"/register"}]
+2024-03-10T08:48:52.4414637 401 : [no body]
+2024-03-10T08:49:08.9307122 401 : [no body]
+2024-03-10T21:24:23.8824871 400 : [{"timestamp":"2024-03-11T03:24:23.840+00:00","status":400,"error":"Bad Request","message":"User already exists.","path":"/register"}]
