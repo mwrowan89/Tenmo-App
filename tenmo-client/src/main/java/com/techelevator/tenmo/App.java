@@ -54,16 +54,17 @@ public class App {
     private void handleRegister() {
         System.out.println();
         System.out.println("-------------------------------------------");
-        System.out.println("Register");
+        System.out.println("                Register");
         System.out.println("-------------------------------------------");
         System.out.println();
         System.out.println("Please register a new user account");
         UserCredentials credentials = consoleService.promptForCredentials();
         if (authenticationService.register(credentials)) {
             System.out.println();
-            System.out.println("-------------------------------------------");
-            System.out.println("Registration successful. You can now login.");
-            System.out.println("-------------------------------------------");
+            System.out.println("---------------------------------------------------");
+            System.out.println("Registration successful! As a thank you from Tenmo,");
+            System.out.println("We have added $1000 to your account. Please login.");
+            System.out.println("---------------------------------------------------");
         } else {
             consoleService.printErrorMessage();
         }
@@ -72,7 +73,7 @@ public class App {
     private void handleLogin() {
         System.out.println();
         System.out.println("-------------------------------------------");
-        System.out.println("Login");
+        System.out.println("                  Login");
         System.out.println("-------------------------------------------");
         System.out.println();
         UserCredentials credentials = consoleService.promptForCredentials();
@@ -117,7 +118,7 @@ public class App {
         while(running) {
             System.out.println();
             System.out.println("-------------------------------------------");
-            System.out.println("Pending Transactions Menu");
+            System.out.println("        Pending Transactions Menu");
             System.out.println("-------------------------------------------");
             System.out.println();
             System.out.println("1: View all pending transactions");
@@ -248,7 +249,7 @@ public class App {
         while(running) {
             System.out.println();
             System.out.println("---------------------------------------------");
-            System.out.println("Transactions Menu");
+            System.out.println("             Transactions Menu");
             System.out.println("---------------------------------------------");
             System.out.println();
             System.out.println("1: View all transactions");

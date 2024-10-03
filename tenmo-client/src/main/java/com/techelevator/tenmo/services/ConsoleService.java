@@ -41,7 +41,7 @@ public class ConsoleService {
         System.out.println("   | $$    | $$$$$$$$ | $$  | $$ | $$ | $$ | $$ |  $$$$$$/");
         System.out.println("   |__/    |________/ |__/  |__/ |__/ |__/ |__/  \\______/ " + resetColorCode);
         System.out.println("***********************************************************");
-        System.out.println("***                  Welcome to TEnmo!!!                ***");
+        System.out.println("***                  Welcome to Tenmo!!!                ***");
         System.out.println("***********************************************************");
     }
 
@@ -56,7 +56,7 @@ public class ConsoleService {
     public void printMainMenu() {
         System.out.println();
         System.out.println("-------------------------------------------");
-        System.out.println("Main Menu");
+        System.out.println("                Main Menu");
         System.out.println("-------------------------------------------");
         System.out.println();
         System.out.println("1: View your current balance");
@@ -118,7 +118,7 @@ public class ConsoleService {
 
     public void printTransferDetails(Transfer transfer) {
         System.out.println("-----------------------------------------");
-        System.out.println("Transfer Details");
+        System.out.println("            Transfer Details");
         System.out.println("-----------------------------------------");
         System.out.println("ID: " + transfer.getTransfer_id());
         System.out.println("From: " + transfer.getAccount_from());
@@ -133,7 +133,7 @@ public class ConsoleService {
 
         System.out.println();
         System.out.println("-------------------------------------------");
-        System.out.println("Current Balance");
+        System.out.println("             Current Balance");
         System.out.println("-------------------------------------------");
         System.out.println();
         System.out.println("$" + accountService.getBalance());
