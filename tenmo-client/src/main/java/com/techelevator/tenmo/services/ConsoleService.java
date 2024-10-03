@@ -181,7 +181,7 @@ public class ConsoleService {
                 System.out.println("Recipient id is invalid");
                 continue;
             } else if (currentUser.getUser().getId() == recipientId) {
-                System.out.println("You can't transfer money to your own account.");
+                System.out.println("You can not transfer money to your own account.");
                 continue;
             }
 
@@ -200,8 +200,14 @@ public class ConsoleService {
         int pendingStatusCode = 1;
 
         while (running) {
-            System.out.println();
-            System.out.print("Please enter the amount to send (Enter 0 to cancel): ");
+            if(isSending){
+                System.out.println();
+                System.out.print("Please enter the amount to send (Enter 0 to cancel): ");
+            } else {
+                System.out.println();
+                System.out.print("Please enter the amount to request (Enter 0 to cancel): ");
+            }
+
 
             try {
                 transferAmount = scanner.nextBigDecimal();

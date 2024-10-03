@@ -73,7 +73,7 @@ public class App {
     private void handleLogin() {
         System.out.println();
         System.out.println("-------------------------------------------");
-        System.out.println("                  Login");
+        System.out.println("                 Login");
         System.out.println("-------------------------------------------");
         System.out.println();
         UserCredentials credentials = consoleService.promptForCredentials();
